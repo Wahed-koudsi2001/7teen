@@ -124,17 +124,20 @@
     <div id="main-wrapper">
         <div class="site-wrapper-reveal section-space--pt__120">
             <!--============ Service Hero Start ============-->
-            <div class="service-hero-wrapper service-hero-space service-hero-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 m-auto">
-                            <div class="service-hero-wrap wow move-up">
-                                <div class="service-hero-text text-center">
-                                    <h3 class="text-white">FOR TECHNOLOGY </h3>
-                                    <h1 class="font-weight--reguler text-white mb-30 text-uppercase">consulting &
-                                        training</h1>
-                                </div>
-                            </div>
+            <div class="swiper mySwiper overflow-hidden user-select-none">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide hero-1">
+                        <div class="service-hero-text text-center">
+                            <h3 class="text-white">FOR TECHNOLOGY </h3>
+                            <h1 class="font-weight--reguler text-white mb-30 text-uppercase">consulting &amp;
+                                training</h1>
+                        </div>
+                    </div>
+                    <div class="swiper-slide hero-2">
+                        <div class="service-hero-text text-center">
+                            <h3 class="text-white">FOR TECHNOLOGY </h3>
+                            <h1 class="font-weight--reguler text-white mb-30 text-uppercase">consulting &amp;
+                                training</h1>
                         </div>
                     </div>
                 </div>
@@ -739,10 +742,11 @@
         <div class="cta-image-area_one section-space--ptb_80 cta-bg-image_one">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-xl-8 col-lg-7">
-                        <div class="cta-content md-text-center">
+                    <div class="z-3 col-xl-8 col-lg-7">
+                        <div class="cta-content md-text-center z-3">
                             <h3 class="heading text-white">We provide a wide range of IT services, so we need to be your
-                                <span class="text-color-secondary"> success story.</span></h3>
+                                <span class="text-color-secondary"> success story.</span>
+                            </h3>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-5">
@@ -872,7 +876,7 @@
                             </li>
                             <li>
                                 <a href="tel:966564261777" class="hover-style-link text-black font-weight--bold">
-                                    Phone number: +966 56 426 1777
+                                    +966 56 426 1777
                                 </a>
                             </li>
                             <li>
@@ -1040,15 +1044,19 @@
     <!-- Ajax JS -->
     <script src="assets/js/plugins/ajax.js"></script>
 
-
-    <!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from avobe) -->
-
-    <!--         
-    <script src="assets/js/plugins/plugins.min.js"></script> 
-    -->
-
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: {
+                delay: 35000,
+                disableOnInteraction: true,
+            },
+            grabCursor: true,
+        });
+    </script>
 
 </body>
 

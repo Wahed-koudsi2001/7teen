@@ -797,6 +797,7 @@ input[type="checkbox"] {
   z-index: 3;
   position: relative;
   background-image: url(../images/bg-contact-us.jpg);
+  height: 70vh;
 }
 @media only screen and (max-width: 767px),
   only screen and (min-width: 768px) and (max-width: 991px),
@@ -840,9 +841,6 @@ input[type="checkbox"] {
   left: 0;
   right: auto;
   z-index: 0;
-}
-.breadcrumb-list li.active {
-  color: #6d70a6;
 }
 
 .page-pagination li {
@@ -5063,18 +5061,49 @@ ul.footer-widget__horizontal-list li {
 /*=============================================
 =           10. Call To Action Css             =
 =============================================*/
-.cta-bg-image_one {
-  background-color: #454545;
-  background-image: url(../images/patterns/mitech-call-to-action-image-global.webp);
-  background-repeat: no-repeat;
-  background-position: top 35% right -68px;
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
-.cta-bg-image_two {
-  background-color: #f6f2ed;
-  background-image: url(../images/patterns/mitech-home-appointment-call-to-action-bg-image.webp);
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-1 {
+  background: url(../images/hero-1.jpg) no-repeat center center/cover;
+  height: calc(100vh - 75px);
+  width: 100vw !important;
+}
+.hero-2 {
+  background: url(../images/hero-2.jpg) no-repeat top 20% center/cover;
+  height: calc(100vh - 75px);
+  width: 100vw !important;
+}
+.cta-bg-image_one {
+  background-image: url(../images/new-cta-bg.webp);
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: top 35% right -68px;
+  position: relative;
+}
+.cta-bg-image_one::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #373c85e1;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
